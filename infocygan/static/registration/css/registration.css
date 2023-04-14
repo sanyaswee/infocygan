@@ -1,6 +1,7 @@
 body {
 	text-align: center;
 	background-color: #1F1F1F;
+	position: relative;
 }
 
 label {
@@ -26,8 +27,7 @@ input:hover {
 
 .registration-window {
 	display: inline-block;
-
-	width: 50%;
+	margin: auto;
 
 	border-style: solid;
 	border-color: lightblue;
@@ -35,6 +35,12 @@ input:hover {
 	border-width: 3px;
 
 	padding: 30px;
+
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	-ms-transform: translate(-50%, 50%);
+  	transform: translate(-50%, 50%);
 }
 
 .input-line {
