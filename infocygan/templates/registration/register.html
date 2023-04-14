@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація на сайті</title>
+    <link rel="stylesheet" href="{% static 'registration/css/registration.css' %}">
+</head>
+<body>
+    <div class="registration-window">
+        <form class="registration-form">
+            <label>Введіть ім'я: </label><input type="text" required>
+            <label>Введіть прізвище: </label><input type="text" required>
+            <label>Введіть нік: </label><input type="text" required>
+            <label>Введіть пароль: </label><input type="password" required>
+            <label>Підтвердіть пароль: </label><input type="password" required>
+            <input type="submit" value="Зареєструватись" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>
