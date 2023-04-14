@@ -1,0 +1,64 @@
+body {
+	text-align: center;
+	background-color: #1F1F1F;
+}
+
+label {
+	font-family: Segoe UI;
+	color: white;
+}
+
+input {
+	background-color: #1F1F1F;
+	border-color: grey;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 3px;
+
+	color: white;
+
+	transition: opacity 0.15s;
+}
+
+input:hover {
+	opacity: 0.7;
+}
+
+.registration-window {
+	display: inline-block;
+
+	width: 50%;
+
+	border-style: solid;
+	border-color: lightblue;
+	border-radius: 5px;
+	border-width: 3px;
+
+	padding: 30px;
+}
+
+.input-line {
+	margin: 10px;
+}
+
+.submit-button {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+
+	padding: 10px;
+	cursor: pointer;
+
+	background-color: rgb(74, 200, 234);
+	border-color: rgb(13, 110, 253);
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 0.8px;
+
+	color: white;
+
+	transition: background-color 0.15s;
+}
+
+.submit-button:hover {
+	background-color: transparent;
+}
