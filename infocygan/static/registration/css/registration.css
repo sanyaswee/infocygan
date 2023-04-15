@@ -25,6 +25,15 @@ input:hover {
 	opacity: 0.7;
 }
 
+td {
+	text-align: right;
+	padding: 5px;
+}
+
+table {
+	margin-bottom: 10px;
+}
+
 .registration-window {
 	display: inline-block;
 	margin: auto;
@@ -41,10 +50,6 @@ input:hover {
   	left: 50%;
   	-ms-transform: translate(-50%, 50%);
   	transform: translate(-50%, 50%);
-}
-
-.input-line {
-	margin: 10px;
 }
 
 .submit-button {
