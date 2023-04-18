@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Tilt+Prism&display=swap');
+body{
+    background-color: #1F1F1F !important;
+}
+
+.post-img{
+    display: block;
+    margin: 10px auto;
+    max-height: 400px !important;
+    border-radius: 10px;
+}
+.post{
+    margin: 10px auto;
+    width: 85vw;
+    margin-right: 15px;
+    color: #FFFFFF;
+}
+
+.post-btn{
+    margin: 5px auto;
+    width: 20%;
+    font-size: 30px !important;
+    font-family: 'Oswald', sans-serif !important;
+    background-color:  #4AC8EA !important;
+}
+
+.search{
+margin-right: 25vw;
+}
+
+.menu{
+    display: inline-block !important;
+}
+.inp-search{
+    width: 500px !important;
+}
+
+.menu-left{
+    width: 10vw !important;
+    display: grid !important;
+    position:absolute !important;
+    margin-top: 5px !important;
+}
+
+.category-design{
+    font-family: 'Tilt Prism', cursive;
+    color: white !important;
+}

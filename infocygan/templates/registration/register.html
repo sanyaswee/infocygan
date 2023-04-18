@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація на сайті</title>
+    <link rel="stylesheet" href="{% static 'registration/css/registration.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="registration-window">
+        <form class="registration-form">
+            <table>
+                <tr>
+                    <td><label>Введіть ім'я: </label></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td><label>Введіть прізвище: </label></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr class="input-line">
+                    <td><label>Введіть нік: </label></td>
+                    <td><input type="text" pattern="[A-Za-z]{4,}" required></td>
+                </tr>
+                <tr>
+                    <td><label>Введіть пароль: </label></td>
+                    <td><input type="password" required></td>
+                </tr>
+                <tr>
+                    <td><label>Підтвердіть пароль: </label></td>
+                    <td><input type="password" required></td>
+                </tr>
+            </table>
+            <input type="submit" value="Зареєструватись" class="submit-button">
+        </form>
+    </div>
+</body>
+</html>
