@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'registration.apps.RegistrationConfig',
     'login.apps.LoginConfig',
+    "add_article.apps.AddArticleConfig",
 ]
 
 MIDDLEWARE = [
