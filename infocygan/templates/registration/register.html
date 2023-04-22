@@ -12,28 +12,8 @@
 <body>
     <div class="registration-window">
         <form class="registration-form">
-            <table>
-                <tr>
-                    <td><label>Введіть ім'я: </label></td>
-                    <td><input type="text" required></td>
-                </tr>
-                <tr>
-                    <td><label>Введіть прізвище: </label></td>
-                    <td><input type="text" required></td>
-                </tr>
-                <tr class="input-line">
-                    <td><label>Введіть нік: </label></td>
-                    <td><input type="text" pattern="[A-Za-z]{4,}" required></td>
-                </tr>
-                <tr>
-                    <td><label>Введіть пароль: </label></td>
-                    <td><input type="password" required></td>
-                </tr>
-                <tr>
-                    <td><label>Підтвердіть пароль: </label></td>
-                    <td><input type="password" required></td>
-                </tr>
-            </table>
+            {% csrf_token %}
+            {{ form.as_p }}
             <input type="submit" value="Зареєструватись" class="submit-button">
         </form>
     </div>
