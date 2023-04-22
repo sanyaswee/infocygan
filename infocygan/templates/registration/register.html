@@ -12,8 +12,15 @@
 <body>
     <div class="registration-window">
         <form class="registration-form">
-            {% csrf_token %}
-            {{ form.as_p }}
+            <table>
+                {% csrf_token %}
+                {% for f in form %}
+                    <tr>
+                        <td><label>{{ f.label }}</label></td>
+                        <td>{{ f }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
             <input type="submit" value="Зареєструватись" class="submit-button">
         </form>
     </div>
