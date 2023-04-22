@@ -28,9 +28,14 @@ textarea {
     background-color:rgb(0, 0, 0);
     height:500px;
     min-height:500px;
+    width:100%;
 }
 
 .done {
     width:156%;
     background-color:rgba(73, 131, 158, 0.849);
 }
+
+/* .input {
+    background-color:rgb(23, 23, 27);
+} */

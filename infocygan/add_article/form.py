@@ -6,5 +6,8 @@ class Form (forms.ModelForm):
         model = Article
         fields = ["name", "preview", "post"]
         widgets = {
-            "post": forms.Textarea({"placeholder":"Введіть вашу статтю..."})
+            "post": forms.Textarea ({"placeholder":"Введіть вашу статтю...",
+                                    "class":"txtarea"}),
+            "name": forms.TextInput ({"class":"input"}),
+            "preview": forms.FileInput ({"class":"input"})
         }
