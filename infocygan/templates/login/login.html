@@ -1,5 +1,5 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <title>Інфоциґан - логін</title>
@@ -13,12 +13,13 @@
                 <table>
                     <thead><tr><th><th></th></th></tr></thead>
                 <tbody>
-                <tr>
-                <td><label for="nick" class = "form">Нік, або id:</label></td>
-                <td><input type="text" id = "nick" class = "first_input" required name="id"></td></tr>
-                <tr>
-                <td><label for="password" class = "form">Пароль:</label></td>
-                <td><input type="password" id = "password" class="first_input" required, name="password"></td></tr>
+                {% csrf_token %}
+                {% for f in form %}
+                    <tr>
+                    <td><label class = "form">{{ f.label }}</label></td>
+                    <td>{{ f }}</td>
+                    </tr>
+                {% endfor %}
                 </tbody>
                 </table>
                 <input type="submit" value = "Увійти" class = "end_sing">
