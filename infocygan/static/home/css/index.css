@@ -47,3 +47,9 @@ margin-right: 25vw;
     font-family: 'Tilt Prism', cursive;
     color: white !important;
 }
+
+.menu-main{
+    position: sticky !important;
+   top: 0 !important;
+   z-index: 1000 !important;
+}

@@ -24,7 +24,8 @@ from add_article.views import add_article
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
-    path('registration/', registration, name="registration"),
-    path('login/', login, name="logn"),
+    path('registration/', RegisterView.as_view(), name="registration"),
+    path('login/', LoginUserView.as_view(template_name="login/login.html"), name="login"),
+    path('logout/', logout_user, name="logout"),
     path ("add/", add_article, name="add_article"),
 ]
