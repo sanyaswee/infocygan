@@ -1,0 +1,42 @@
+body {
+	background-color: #1F1F1F;
+	color: white;
+	text-align: center;
+
+	font-family: Segoe UI;
+}
+
+button {
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	cursor: pointer;
+
+	background-color: rgb(74, 200, 234);
+	border-color: rgb(13, 110, 253);
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 0.8px;
+
+	color: white;
+
+	transition: background-color 0.15s;
+}
+
+button:hover {
+	background-color: transparent;
+}
+
+a {
+	text-decoration: none !important;
+}

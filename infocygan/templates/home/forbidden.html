@@ -1,11 +1,19 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <title>Дія заборонена</title>
+    <link rel="stylesheet" href="{% static 'home/css/forbidden.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Дія доступна лише після авторизації</h1>
+    <p>
+        <i>Будь ласка, увійдіть або зареєструйтесь</i>
+    </p>
     <a href="{% url 'login' %}"><button>Увійти</button></a>
     <a href="{% url 'registration' %}"><button>Зареєструватись</button></a>
 </body>
