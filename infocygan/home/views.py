@@ -1,7 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
-from .models import *
 
 
 def index(request):
@@ -9,4 +8,7 @@ def index(request):
 
 
 def forbidden(request):
-    return render(request, "home/forbidden.html")
+    if not request.user.is_authenticated:
+        return render(request, "home/forbidden.html")
+    else:
+        return redirect('index')
