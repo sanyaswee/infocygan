@@ -53,3 +53,8 @@ margin-right: 25vw;
    top: 0 !important;
    z-index: 1000 !important;
 }
+
+.username {
+    font-weight: bold;
+    color: #4AC8EA;
+}
