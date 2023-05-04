@@ -6,3 +6,7 @@ from .models import *
 
 def index(request):
     return render(request, "home/index.html")
+
+
+def forbidden(request):
+    return render(request, "home/forbidden.html")

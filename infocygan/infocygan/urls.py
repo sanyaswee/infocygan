@@ -27,5 +27,6 @@ urlpatterns = [
     path('registration/', RegisterView.as_view(), name="registration"),
     path('login/', LoginUserView.as_view(template_name="login/login.html"), name="login"),
     path('logout/', logout_user, name="logout"),
-    path ("add/", add_article, name="add_article"),
+    path("add/", add_article, name="add_article"),
+    path("forbidden/", forbidden, name="forbidden"),
 ]
