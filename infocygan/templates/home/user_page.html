@@ -23,26 +23,24 @@
             <td><label for="email" class = "form">Електронна скринька:</label></td>
             <td><input type="email" id = "email" class="notid" disabled value = "{{ users.email }}"></td></tr>
             <tr>
-            <td><label for="password" class="form">Пароль:</label></td>
-            <td><input type="text" id = "password" disabled class="notid" value = "{{ users.passwprd }}"></td></tr>
-            <tr>
             <td><label for="id">Ідентифікаційний код:</label></td>
             <td><input type="number" id = "id" disabled value = "{{ users.id }}"></td></tr>
             </tbody>
             </table>
             </div>
+            <div class = "account">
             <table>
             <thead>
-                <tr><th></th><th></th></tr>
+                <tr><th><i>Дії з обліковим записоом</i></th><th><i>Дії з обліковим записоом</i></th></tr>
             </thead>
             <tbody>
             <tr>
-            <td class="account"><a href="#">Вийти з облікового запису</a></td>
-            <td class="account"><a href="{% url 'login' %}">Змінити обліколий запис</a></td></tr>
+            <td class="account"><a href="{% url 'logout' %}">Вийти</a></td>
+            <td class="account"><a href="{% url 'login' %}">Змінити</a></td></tr>
             <tr>
-            <td class="account"><a href="#">Видалити обліковий запис</a></td>
-            <td class="account"><a href="{% url 'registration' %}">Новий обліковий запис</a></td></tr>
-            </table></tbody>
+            <td class="account"><a href="#">Видалити</a></td>
+            <td class="account"><a href="{% url 'registration' %}">Новий</a></td></tr>
+            </table></tbody></div>
             <a href="{% url 'index' %}" class = "to_index">До головної сторінки</a>
             </div>
     </body>
