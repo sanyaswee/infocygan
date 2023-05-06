@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.screen {
+    justify-content:center;
+    align-items:center;
+    margin-top:5%;
+    padding:2%;
+    border:5px double rgb(74, 200, 234);
+    margin-left:35%;
+    margin-right:30%;
+}
+
+a.to_index {
+    align-items:center;
+    justify-content:center;
+    display:flex;
+    padding:5px;
+    margin-top:20px;
+    border-radius:5%;
+    background-color:rgb(13, 110, 253);
+    color:whitesmoke;
+    border:2px gray solid;
+}
+
+label {
+    margin:5px;
+}
+
+input {
+    width:130%;
+}
+
+td.account {
+    padding-right:50px;
+}
