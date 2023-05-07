@@ -13,7 +13,7 @@
 
         <div class = "screen">
 
-        <form method = "post">
+        <form method = "post" action = "{% url 'add_article' %}">
             {% csrf_token %}
 
             <div class = "form">
@@ -28,7 +28,7 @@
 
             <div class="form post">
             <label for = "post">Напишіть статтю:</label>
-           {{ form.post }}
+            {{ form.post }}
             </div>
 
             <div class="form">

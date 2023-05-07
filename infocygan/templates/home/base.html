@@ -6,7 +6,7 @@
     {% block title %}
     {% endblock %}
 </head>
-<body>
+    <body data-bs-theme = "dark">
     <nav class="menu-main navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Logo</a>
@@ -20,7 +20,7 @@
           <div class="menu navbar-collapse position-absolute end-0" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Головна</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Головна</a>
                 </li>
                 {% if not request.user.is_authenticated %}
                     <li class="nav-item">
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="{% url 'add_article' %}">Додати</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'forbidden' %}">Профіль | <span class="username">{{ request.user.username }}</span></a>
+                        <a class="nav-link" href="{% url 'user_page' %}">Профіль | <span class="username">{{ request.user.username }}</span></a>
                     </li>
                 {% endif %}
             </ul>
