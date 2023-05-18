@@ -5,11 +5,10 @@ body {
 .screen {
     justify-content:center;
     align-items:center;
-    margin-top:5%;
+    margin:5% auto;
+    width:1140px;
     padding:2%;
     border:5px double rgb(74, 200, 234);
-    margin-left:35%;
-    margin-right:28%;
 }
 
 a.to_index {
@@ -38,5 +37,23 @@ td.account {
 }
 
 div.account {
-    width:100%;
+    margin-left: 25%;
+}
+
+.usrname {
+font-size: 40px;
+margin-left: 40px;
+color: white;
+}
+
+.usr_logo {
+width:200px;
+height:200px;
+border-radius: 50%;
+object-fit: cover;
+border:5px solid rgb(74, 200, 234);
+}
+.fake{
+    margin-bottom: 30px;
+    margin-left: 25%;
 }

@@ -73,3 +73,33 @@ table {
 .submit-button:hover {
 	background-color: transparent;
 }
+
+#id_logo{
+     width: 175px;
+     font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+
+	cursor: pointer;
+
+	background-color: rgb(74, 200, 234);
+	border-color: rgb(13, 110, 253);
+	border-style: solid;
+	border-radius: 6px;
+	border-width: 0.8px;
+
+	color: white;
+	transition: background-color 0.15s;
+}
+.submit-button:hover {
+	background-color: transparent;
+}
+
+#id_logo::file-selector-button {
+    display:none;
+}
+#id_logo::file-selector-button {
+    display:none;
+}
+#id_logo:hover {
+	background-color: transparent;
+}
