@@ -1,13 +1,16 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from registration.models import UserCustom
+from add_article.models import Article
+from django.views.generic import ListView
 
-
-# Create your views here.
-
-
-def index(request):
-    return render(request, "home/index.html")
+class IndexView(ListView):
+    model = Article
+    template_name = "home/index.html"
+    context_object_name = "articles"
+    paginate_by = 5
+    def get_queryset(self):
+        return Article.objects.all()
 
 
 def user_page (request, id):
