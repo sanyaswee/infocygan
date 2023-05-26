@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
+from registration.models import UserCustom
+
 
 # Create your views here.
 
@@ -8,9 +10,9 @@ def index(request):
     return render(request, "home/index.html")
 
 
-def user_page (request):
+def user_page (request, id):
     if request.user.is_authenticated:
-        users = request.user
+        users = UserCustom.objects.get(id=id)
         return render(request, "home/user_page.html", {"users": users})
     else:
         return redirect ("forbidden")

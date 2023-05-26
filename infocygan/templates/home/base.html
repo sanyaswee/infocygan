@@ -34,7 +34,7 @@
                         <a class="nav-link" href="{% url 'add_article' %}">Додати</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'user_page' %}">Профіль | <span class="username">{{ request.user.username }}</span></a>
+                        <a class="nav-link" href="{% url 'user_page' request.user.id %}">Профіль | <span class="username">{{ request.user.username }}</span></a>
                     </li>
                 {% endif %}
             </ul>
