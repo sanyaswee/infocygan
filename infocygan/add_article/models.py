@@ -1,4 +1,8 @@
 from django.db import models
+from django.db.models.functions import Lower
+
+models.CharField.register_lookup(Lower)
+models.TextField.register_lookup(Lower)
 # from django.core.validators import FileExtensionValidator
 
 

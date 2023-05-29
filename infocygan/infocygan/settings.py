@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'registration.apps.RegistrationConfig',
     'login.apps.LoginConfig',
     "add_article.apps.AddArticleConfig",
+    'django.contrib.postgres',
 ]
 
 MIDDLEWARE = [

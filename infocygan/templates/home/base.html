@@ -13,9 +13,10 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <form class="search d-flex" role="search">
-              <input class="inp-search form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Знайти</button>
+          <form class="search d-flex" role="search" method="post" action = "{% url 'search_post' %}">
+              {% csrf_token %}
+              <input class="inp-search form-control me-2" name = "text" type="search" placeholder="Пошук" aria-label="Search">
+              <input class="btn btn-outline-success" type="submit" placeholder="Знайти">
             </form>
           <div class="menu navbar-collapse position-absolute end-0" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">

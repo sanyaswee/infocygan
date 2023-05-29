@@ -26,3 +26,7 @@ def forbidden(request):
         return render(request, "home/forbidden.html")
     else:
         return redirect('index')
+
+def search_post(request):
+    objects = Article.objects.filter(name__lower__icontains =request.POST["text"])
+    return render(request, "home/search.html", {"objects":objects})
